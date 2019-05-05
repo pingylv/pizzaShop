@@ -1,4 +1,7 @@
+var x =1;
+
 function something()
 {
-	alert('get pranked son!');
+	alert(x);
+	x = x+1;
 }
