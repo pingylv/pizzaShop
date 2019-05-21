@@ -22,11 +22,11 @@ end
 
 post '/place_order' do
 	@order = Order.create params[:order]
-	erb "Thank you for choosing PAPA JOHNDIS, youre order has been placed"
+	erb :orders_placed
 end
 
 post '/cart' do
-	@orders_input = params[:orders]
+	@orders_input = params[:orders_input]
 	@items = parse_orders_input @orders_input
 
 	@items.each do |item|
