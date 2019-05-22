@@ -39,7 +39,7 @@
 
 	<div class="form-group">
 		<label>Name</label>
-		<input name="order[name]" type="text" class="form-control" placeholder="Youre name">
+		<input name="orders_input[name]" type="text" class="form-control" placeholder="Youre name">
 	</div>
 
 	<div class="form-group">
@@ -53,5 +53,7 @@
 	</div>
 
 <button type="submit" class="btn btn-success btn-lg">Place this order</button>
+
+<button class="btn btn-danger btn-lg" onclick="return cancel_order()">Cancel</button>
 
 </form>
